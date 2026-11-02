@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Nama</title>
+</head>
+<body>
+  <form>
+    <input type="text" id="namaDepan" placeholder="Nama depan">
+    <input type="text" id="namaBelakang" placeholder="Nama belakang">
+    <input type="button" id="kirim" value="Kirim">
+  </form>
+
+  <script>
+    document.getElementById('kirim').addEventListener('click', function () {
+      console.log(document.getElementById('namaDepan').value);
+      console.log(document.getElementById('namaBelakang').value);
+    });
+  </script>
+</body>
+</html>
